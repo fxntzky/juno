@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://juno.local/catalog/schema/product.schema.json",
+  "title": "JUNO Product",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "name",
+    "collectionId",
+    "status",
+    "description",
+    "platform",
+    "availability",
+    "storyModules",
+    "media",
+    "tags"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^(analog|digital)-[a-z0-9-]+$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "collectionId": {
+      "type": "string",
+      "enum": ["analog-time", "digital-time"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["concept", "prototype", "launch-ready"]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "platform": {
+      "type": "object",
+      "required": ["family"],
+      "properties": {
+        "family": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "priceIntent": {
+      "type": "object",
+      "required": ["currency", "min", "max", "displayMode"],
+      "properties": {
+        "currency": {
+          "type": "string",
+          "enum": ["USD"]
+        },
+        "min": {
+          "type": "number",
+          "minimum": 0
+        },
+        "max": {
+          "type": "number",
+          "minimum": 0
+        },
+        "displayMode": {
+          "type": "string",
+          "enum": ["positioning-only", "range", "fixed"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "availability": {
+      "type": "object",
+      "required": ["status", "sellable"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["concept", "preorder", "in-stock", "out-of-stock"]
+        },
+        "sellable": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "inventory": {
+      "type": "object",
+      "required": ["quantity", "backorderable"],
+      "properties": {
+        "quantity": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "backorderable": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "storyModules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "title", "body"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "philosophy",
+              "geology",
+              "materials",
+              "places",
+              "civilization",
+              "planetary-time",
+              "engineering"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "body": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "media": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "url"],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["image", "video"]
+          },
+          "url": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alt": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "additionalProperties": false
+}

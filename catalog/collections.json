@@ -1,0 +1,12 @@
+{
+  "$schema": "./schema/collections-manifest.schema.json",
+  "collections": [
+    {
+      "id": "digital-time",
+      "name": "Digital Time",
+      "description": "Design-led digital watch concepts with clear functional expression.",
+      "productCountTarget": 4,
+      "order": 1
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+JUNO — M83 Home Rebuild v6
+===========================
+
+REQUIRES: JUNO v5 already installed (the previous ZIP).
+PATCH: only these two files are replaced:
+  app/pages/HomePage.tsx
+  app/styles/experience.scss
+
+What changed
+- Removes ALL forced scroll-snap behavior; ordinary/native scroll plus smooth nav jumps.
+- Removes the former paired xp-spread grids that hid copy below tall images.
+- Rebuilds the Home as complete, readable chapters, each photo beside its own text.
+- Preserves hero.webp, JUNO wordmark and the /product/junom83 Explore action.
+- Overview, Watch Functions and Specs are dark chapters.
+- Materials, Display, Details, On Wrist, Design Notes and Buy are lighter chapters.
+- Design Notes precedes Buy and the final full-width black 05 / Digital Time lineup.
+- Mobile layout stacks each chapter's copy and corresponding picture.
+- Existing separate Story route, PDP, catalog, commerce/cart and demo checkout unchanged.
+- No new assets or dependencies.
+
+Installation: unzip -o ~/Downloads/JUNO-M83-home-rebuild-v6.zip -d .
+Then: npm run check && npm run dev
+
+The application TypeScript static check passed in our source copy. Full npm check
+must be run locally: our tool environment does not have a complete install.
+Do not commit before desktop and mobile QA.

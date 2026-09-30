@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "digital-junom31",
+  "slug": "junom31",
+  "name": "JUNO M31",
+  "collectionId": "digital-time",
+  "status": "launch-ready",
+  "description": "A slim digital silhouette that emphasizes vertical rhythm, slim profile ergonomics, and wearable precision.",
+  "platform": {
+    "family": "digital-platform-v2"
+  },
+  "priceIntent": {
+    "currency": "USD",
+    "min": 345,
+    "max": 345,
+    "displayMode": "fixed"
+  },
+  "availability": {
+    "status": "in-stock",
+    "sellable": true
+  },
+  "storyModules": [
+    {
+      "id": "junom31-philosophy",
+      "type": "philosophy",
+      "title": "Slim Presence",
+      "body": "M31 is designed as a light, confident digital companion with strict control over proportion and weight."
+    },
+    {
+      "id": "junom31-engineering",
+      "type": "engineering",
+      "title": "Production Engineering",
+      "body": "Edge radii, crystal fit, and strap interfaces are calibrated for comfort and reliable assembly."
+    }
+  ],
+  "media": [],
+  "tags": [
+    "digital",
+    "slim",
+    "launch-ready"
+  ],
+  "inventory": {
+    "quantity": 19,
+    "backorderable": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://juno.local/catalog/schema/collections-manifest.schema.json",
+  "title": "JUNO Collections Manifest",
+  "type": "object",
+  "required": ["collections"],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "collections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "./collection.schema.json"
+      }
+    }
+  },
+  "additionalProperties": false
+}

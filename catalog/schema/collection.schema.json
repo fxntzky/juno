@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://juno.local/catalog/schema/collection.schema.json",
+  "title": "JUNO Collection",
+  "type": "object",
+  "required": ["id", "name", "description", "productCountTarget", "order"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "enum": ["analog-time", "digital-time"]
+    },
+    "name": {
+      "type": "string",
+      "enum": ["Analog Time", "Digital Time"]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "productCountTarget": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "order": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "additionalProperties": false
+}

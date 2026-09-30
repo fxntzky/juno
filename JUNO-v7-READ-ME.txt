@@ -1,0 +1,12 @@
+JUNO M83 — Large Revision v7
+
+Changes:
+- Hero copy and CTA move inboard toward the M83; JUNO wordmark becomes smaller/airier.
+- Overview starts chapter numbering at 01; the Home sequence continues through 10 / Digital Time.
+- Watch Functions image fills its media container (cover).
+- Editorial tone alternates light/dark by chapter while Overview, Specs and final Digital Time remain dark anchors.
+- Story hero rebuilt as a true two-panel viewport; JUNO no longer crosses the image seam.
+- Product detail first view is compacted to fit image + purchase controls within the desktop 100dvh viewport.
+- No scroll snap introduced.
+
+This patch does not change catalog data, media assets, cart, checkout or commerce services.

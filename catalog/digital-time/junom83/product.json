@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "digital-junom83",
+  "slug": "junom83",
+  "name": "JUNO M83",
+  "collectionId": "digital-time",
+  "status": "launch-ready",
+  "description": "A polished digital watch built around bold segmented numerals, balanced symmetry, and high-contrast readability.",
+  "platform": {
+    "family": "digital-platform-v2"
+  },
+  "priceIntent": {
+    "currency": "USD",
+    "min": 380,
+    "max": 380,
+    "displayMode": "fixed"
+  },
+  "availability": {
+    "status": "in-stock",
+    "sellable": true
+  },
+  "storyModules": [
+    {
+      "id": "junom83-philosophy",
+      "type": "philosophy",
+      "title": "Retrofuture Precision",
+      "body": "M83 blends retro display language with a contemporary geometric shell, prioritizing emotional clarity and instant legibility."
+    },
+    {
+      "id": "junom83-engineering",
+      "type": "engineering",
+      "title": "Production Engineering",
+      "body": "The housing and display stack are tuned for mass-production consistency, glare control, and daily wear durability."
+    }
+  ],
+  "media": [],
+  "tags": [
+    "digital",
+    "retrofuturist",
+    "launch-ready"
+  ],
+  "inventory": {
+    "quantity": 22,
+    "backorderable": false
+  }
+}

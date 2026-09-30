@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "digital-junob612",
+  "slug": "junob612",
+  "name": "JUNO B612",
+  "collectionId": "digital-time",
+  "status": "launch-ready",
+  "description": "A sculpted digital watch with strong bezel identity, deep contrast, and cinematic retrofuture attitude.",
+  "platform": {
+    "family": "digital-platform-v2"
+  },
+  "priceIntent": {
+    "currency": "USD",
+    "min": 410,
+    "max": 410,
+    "displayMode": "fixed"
+  },
+  "availability": {
+    "status": "in-stock",
+    "sellable": true
+  },
+  "storyModules": [
+    {
+      "id": "junob612-philosophy",
+      "type": "philosophy",
+      "title": "Cinematic Utility",
+      "body": "B612 pushes a more dramatic form language without compromising operational clarity and daily practicality."
+    },
+    {
+      "id": "junob612-engineering",
+      "type": "engineering",
+      "title": "Production Engineering",
+      "body": "Reinforced geometry and controlled tolerances ensure reliable fit, finish, and wrist behavior at scale."
+    }
+  ],
+  "media": [],
+  "tags": [
+    "digital",
+    "bold",
+    "launch-ready"
+  ],
+  "inventory": {
+    "quantity": 9,
+    "backorderable": false
+  }
+}

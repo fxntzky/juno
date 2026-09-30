@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schema/product.schema.json",
+  "id": "digital-junom64",
+  "slug": "junom64",
+  "name": "JUNO M64",
+  "collectionId": "digital-time",
+  "status": "launch-ready",
+  "description": "A compact digital object with calm proportions, matte finishes, and a strong read-at-a-glance hierarchy.",
+  "platform": {
+    "family": "digital-platform-v2"
+  },
+  "priceIntent": {
+    "currency": "USD",
+    "min": 360,
+    "max": 360,
+    "displayMode": "fixed"
+  },
+  "availability": {
+    "status": "in-stock",
+    "sellable": true
+  },
+  "storyModules": [
+    {
+      "id": "junom64-philosophy",
+      "type": "philosophy",
+      "title": "Quiet Interface",
+      "body": "M64 strips visual noise to the essentials, creating a minimal interface that still feels expressive and characterful."
+    },
+    {
+      "id": "junom64-engineering",
+      "type": "engineering",
+      "title": "Production Engineering",
+      "body": "The module stack and case architecture are optimized for repeatable assembly and long-term reliability."
+    }
+  ],
+  "media": [],
+  "tags": [
+    "digital",
+    "minimal",
+    "launch-ready"
+  ],
+  "inventory": {
+    "quantity": 17,
+    "backorderable": false
+  }
+}

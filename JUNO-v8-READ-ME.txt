@@ -1,0 +1,12 @@
+JUNO M83 — Mega Footer v8
+
+Changes:
+- Integrates 10 / Digital Time visually and semantically into the footer.
+- Hides the shared shell footer only on the home route while .xp-home is mounted.
+- Adds an internal editorial footer row:
+  © 2026 JUNO / DESIGNED IN ARGENTINA / DIGITAL TIME / INTERACTIVE PROTOTYPE
+- No changes to catalog, product routes, cart, checkout, Story, or product pages.
+
+Install from the JUNO project root:
+  unzip -o ~/Downloads/JUNO-M83-mega-footer-v8.zip -d .
+  npm run check && npm run dev
